@@ -1,0 +1,179 @@
+/*Torna responsivo os cartões, organiza em duas colunas*/
+@media(max-width: 900px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+/*Torna responsivo os cartões, organiza em uma colunas*/
+@media(max-width: 402px){
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  }
+/*Elimina o aside do site, visível apenas em versões maiores*/
+@media(max-width: 780px){
+    aside#Lateral{
+       display: none;
+    }
+    .texto{
+        width: 100%;
+        min-height: 100vh;
+    }
+}
+/*Elimina o menu principal e revela o menu secundário*/
+@media(max-width: 730px){
+  nav.Pri{
+      display: none;
+  }
+  .MenuR{
+    display: block;
+}
+.logomarca{
+    width: 88%;
+}
+}
+
+@media(min-width: 1300px){
+    header.MenuP{
+        height: 15vh;
+        border-bottom: .3vw black solid;
+        box-shadow: .2vw .2vw .3vw .1vw black;
+    }
+    .logo,figure{
+        width: 20vw;
+        height: 15vh;
+    }
+    figure{
+        border-right: .4vw black solid;
+        border-bottom: .4vw black solid;
+    }
+    #lamp{
+        font-size: 5vw;
+        height: 15vh;
+        width: 10vw;
+        border-left: .3vw black solid;
+    }
+    #lamp:hover{
+        border-left: .5vw black solid;
+    }
+    nav.Pri{
+        margin: 0 auto;
+    }
+    nav.Pri ul{
+        height: 15vh;
+        font-size: 5vw;
+    }
+    nav.Pri ul li{
+        margin-right: 3vw;
+    }
+    main{
+        margin-bottom: 1vw;
+        background-color: rgb(40, 40, 40);
+    }
+    .redes{
+        height: 11vh;
+        font-size: 4vw;
+        padding: 2vw;
+    }
+    .redes a:hover{
+        color: rgb(10, 10, 10);
+    }
+    .secundario{
+        font-size: 2vw;
+        height: 5vh;
+    }
+    .msg{
+        font-size: 3vh;
+    }
+    aside#Lateral{
+        margin: 1vw;
+        border: black .3vw solid;
+        background-color: rgb(30, 30, 30);
+    }
+    .card {
+        width: 20vw;
+        height: 25vw;
+        margin: 3vw 1vw 10vw;
+    }
+    .card img{ 
+        width: 20vw;
+        height: 25vw;
+        border: .2vw black solid;
+        box-shadow: .2vw .2vw .3vw .1vw black;
+    }
+    .backtext{
+        width: 20vw;
+        height: 25vw;
+        border: .2vw black solid;
+        background-image: linear-gradient(rgb(66, 66, 66),rgb(90, 90, 90));
+    }
+    h4{
+        font-size: 2vw;
+        margin-top: .5vw;
+    }
+    h1{
+        font-size: 3vw;
+        margin: 5.5vw 5vw;
+    }
+    br{
+        margin-bottom: 1vw;
+    }
+    article.backtext p{
+        margin-top: 1.5vw;
+    }
+    article.backtext ul{
+        margin-left: 2.5vw;
+        margin-top: 1vw;
+    }
+    .text{
+        margin: 5vw;
+        font-size: 1.7vw;
+    }
+    .text p{
+        font-size: 1.7vw;
+        margin: .5vw;
+    }
+    .backtext p{
+        font-size: 1.5vw;
+        margin: .5vw;
+    }
+    .backtext ul li{
+        font-size: 1.5vw;
+        margin: .5vw;
+    }
+    .icon{
+        width: 17%;
+        height: 3vw;
+        font-size: 2.5vw;
+        margin-top: 1.5vw;
+    }
+    form.pesquisa input{
+        font-size: 1.5vw;
+        height: 3vw;
+        margin-top: 1.5vw;
+    }
+    .list{
+        font-size: 2vw;
+        margin-top: 5vw;
+    }
+    .list li{
+        margin-top: 1.5vw;
+    }
+    .sub{
+        width: 100%;
+        height: 2.5vw;
+        margin-top: 6vw;
+        margin-bottom: 4vw;
+        font-size: 2vw;
+        border: .2vw solid black;    
+    }
+    address p {
+        margin-top: 1.5vw;
+        margin-left: .5vw;
+        font-size: 1.7vw;
+    }
+    }
+  

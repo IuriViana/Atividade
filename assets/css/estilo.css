@@ -1,0 +1,278 @@
+.icon,.container,#lamp,nav.Pri ul, section.cartoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav.Pri ul, .secundario, .sub, .list, .SubM ul li{
+    font-family: 'Zilla Slab', serif;
+}
+header.MenuP, footer, aside#Lateral, .card{
+    user-select: none;
+}
+
+/*Estrtura do Cabeçalho e logo*/
+header.MenuP{
+    display: flex;
+    height: 80px;
+    box-shadow: 2px 2px 3px 1px black;
+    border-bottom: 3px black solid;
+    background-color: rgb(71, 69, 69);
+}
+.logo,figure{
+    width: 160px;
+    height: 80px;
+}
+figure{
+    background-color: rgb(100, 97, 97);
+    border-right: 2px black solid;
+    border-bottom: 2px black solid;
+}
+figure:hover{
+    cursor: pointer;
+}
+
+/*Botão de tema*/
+#lamp{
+    font-size: 45px;
+    height: 80px;
+    width: 80px;
+    border-left: 3px black solid;
+}
+#lamp:hover{
+    transition: 50ms;
+    cursor: pointer;
+    border-left: 5px black solid;
+}
+
+/*Menu de Navegação principal*/
+nav.Pri{
+    margin: 0 auto;
+}
+nav.Pri ul{
+    height: 90px;
+    font-size: 35px;
+    display: flex;
+}
+nav.Pri ul li{
+    margin-right:50px;
+}
+nav.Pri ul li a:hover{
+    color: rgb(39, 38, 38);
+}
+
+/*Seção principal do documento*/
+main{
+    width: 98%;
+    min-height: 100vh;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background-color: rgb(40, 40, 40);
+}
+
+/*Estrutura do rodapé*/
+footer{
+    background-color: rgb(32, 32, 32);
+}
+.redes{
+    height: 60px;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px;
+    transition: 400ms;
+}
+.redes a:hover{
+    color: rgb(10, 10, 10);
+}
+.secundario{
+    font-size: 20px;
+    height: 30px;
+    text-align: center;
+    color: rgb(141, 138, 138);
+    background-color: rgb(0, 0, 0);
+}
+.mensagem{
+    cursor: pointer;
+}
+.msg{
+    user-select: text;
+    font-size: 16px;
+    font-weight: 500;
+    width: 60%;
+    margin: 0 auto;
+    background-color: rgb(37, 37, 37);
+}
+
+/*Organizando seções de conteúdos*/
+.content{
+    display: flex;
+}
+.texto{
+    width: 80%;
+}
+aside#Lateral{
+    width: 20%;
+    margin: 13px;
+    border: black 3px solid;
+    background-color: rgb(30, 30, 30);
+}
+
+/*Fazendo os cards com efeito Flip*/
+.card {
+    position: relative;
+    width: 180px;
+    height: 250px;
+    margin: 10px 10px 25px;
+}
+.card img{ 
+    width: 180px;
+    height: 250px;
+    object-fit: cover;
+    border: 2px black solid;
+    box-shadow: 2px 2px 3px 1px black;
+}
+.card .Flip{
+    cursor: pointer;
+    transition: transform .6s;
+    transform-style: preserve-3d;
+}
+.Back,.Front{
+    position: absolute;
+    backface-visibility: hidden;
+}
+.backtext{
+    width: 180px;
+    height: 250px;
+    border: 2px black solid;
+    background-image: linear-gradient(rgb(66, 66, 66),rgb(90, 90, 90));
+}
+.Back{
+    transform: rotateY(180deg);
+}
+.card:hover .Flip{ 
+    transform: perspective(1000px)  rotateY(180deg);
+}
+
+/*Definindo estilo do texto*/
+h4{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5px;
+    color: rgb(19, 19, 19);
+    font-family: 'Rowdies', cursive;
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+    margin: 55px 50px;
+    color: rgb(185, 185, 185);
+    text-decoration: underline;
+    font-family: 'Poppins', sans-serif;
+}
+.text{
+    margin: 5px;
+    font-size: 17px;
+    color: rgb(163, 163, 163);
+    text-align: justify;
+}
+.text p{
+    font-size: 17px;
+    margin: 5px;
+}
+.backtext p{
+    font-size: 15px;
+    margin: 5px;
+}
+.backtext ul li{
+    font-size: 1.5vw;
+    margin: 5px;
+}
+br{
+    margin-bottom: 10px;
+}
+article.backtext p{
+    text-align: center;
+    margin-top: 15px;
+}
+article.backtext ul{
+    margin-left: 25px;
+    margin-top: 10px;
+    list-style: outside;
+}
+
+/*Estruturando o conteúdo do aside*/
+form{
+    display: flex;
+}
+.icon{
+    cursor: pointer;
+    width: 17%;
+    height: 30px;
+    font-size: 25px;
+    margin-top: 15px;
+    background-color: rgb(65, 65, 65);
+}
+form.pesquisa input{
+    font-size: 15px;
+    width: 83%;
+    height: 30px;
+    border: 0px;
+    margin-top: 15px;
+    background-color: rgb(71, 71, 71);
+}
+.list{
+    font-size: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+.list li a{
+    color: rgb(146, 146, 146);
+}
+.list li{
+    margin-top: 15px;
+}
+.sub{
+    width: 100%;
+    height: 25px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    color: #333333;
+    text-align: center;
+    border: 2px solid black;
+    background-color: rgb(151, 151, 151);
+    
+}
+
+address p {
+    margin-top: 15px;
+    margin-left: 5px;
+    font-size: 17px;
+    color: rgb(146, 146, 146);
+}
+address a {
+    color: rgb(85, 85, 85);
+}
+
+/*Configurações para facilitar ao tornar o site responsivo*/
+section.cartoes{
+    margin-top: 30px;
+    width: 100%;
+}
+.MenuR{
+    display: none;
+}
+.SubM{
+    width: 100%;
+    height: 35px;
+    border-bottom:3px black solid ;
+    background-color: rgb(100, 100, 100);
+}
+.SubM ul{
+    display: flex;
+    justify-content: center;
+}
+.SubM ul li{
+font-size: 20px;
+margin-top: 5px;
+margin-left: 35px;
+}

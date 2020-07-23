@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Ua-Compatible" content="ie=edge">
+    <title>Exercício</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/exame.png">
+    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <!--Headers e Nav do documento-->
+    <header class="MenuP">
+        <div class="logomarca">
+            <figure>
+                <img class="logo" src="./assets/images/Logo.png" alt="logo">
+            </figure>
+        </div>
+
+        <nav class="Pri">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Links</a></li>
+            </ul>
+        </nav>
+
+        <div onclick="clicar()" id="lamp">
+            <i class="far fa-lightbulb"></i>
+        </div>
+    </header>
+
+    <!--Menu responsivo - Aparece apenas em telas de celulares-->
+    <header class="MenuR">
+        <nav class="SubM">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Links</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Seção principal do documento-->
+    <main>
+        <div class="content">
+            <section>
+                <h1>■ Período de quarentena:</h1>
+
+                <div>
+                    <p class="text">
+                        Em meio a pandemia do novo Corona Vírus, iniciada na China em
+                        <time>Dezembro de 2019</time>, estamos em um estado de quarentena
+                        referente ao isolamento social, que busca diminuir a quantidade de casos
+                        recorrentes do vírus.
+                        <br>
+                        Já estamos a praticamente 5 meses sem aula e quase não recebemos nenhum
+                        conteúdo, em casa estou aproveitando o tempo livre para compensar um pouco
+                        este momento que estou afastado da escola. As video-aulas em geral são boas,
+                        porém poucos alunos tem internet adequada e nenhum professor ou aluno está
+                        acostumado ou lidando bem com esta situação, inédita.
+                        <br>
+                        Sem o colégio minha rotina mudou bastante, estou dormindo meia noite para
+                        acordar às oito horas da manhã, arrumo meu quarto, estudo um pouco, jogo
+                        com amigos e vejo animes ou mangás. Estou tentando sempre desenhar,
+                        programar ou aprender algo de novo.
+                        <br>
+                        Pretendo parar de procrastinar e investir meu tempo para reforçar
+                        conhecimentos, seja em WEB ou em máterias do primeiro ano em geral.
+                        Ao fazer esta página coloquei em prática diversos conhecimentos que
+                        aprendi em alguns cursos que realizei.
+                        <br>
+                        Estou muito ansioso para rever meus colegas e professores,
+                        tenho saudade de estudar, espero que tudo passe o quanto antes.
+                        Quando tudo voltar ao normal acredito que vai ser bem difícil
+                        compensar o ano letivo, mas sei que eu e meus colegas seremos capazes.
+                    </p>
+                </div>
+            </section>
+    
+            <aside id="Lateral">
+                <form class="pesquisa">
+                    <input type="search">
+                    <div class="icon"><i class="fas fa-search"></i></div>
+                </form>
+                <div class="list">
+                    <ul>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Novidades</a></li>
+                        <li><a href="#">Recomendações</a></li>
+                    </ul>
+                </div>
+                <div class="sub">
+                    Créditos:
+                </div>
+                <address>
+                    <p>Ícones feitos por <a href="https://www.flaticon.com/br/autores/freepik"
+                            title="Freepik">Freepik</a>
+                    <p>Canal que aprendi a fazer o Flip: <a href="https://youtu.be/hn6CWk7gi9E">CANAL</a></p>
+                    <p><strong>OBS:</strong> Eu não me orgulho nem um pouco de jogar lol!</p>
+                </address>
+            </aside>
+        </div>
+
+        <section class="cartoes">
+            <div class="container">
+                <article class="card">
+                    <div class="Flip">
+                        <section class="Front">
+                            <img src="./assets/images/Minecraft.png">
+                        </section>
+                        <section class="Back">
+                            <article class="backtext">
+                                <h4>Jogos</h4>
+                                <p>
+                                    Estou jogando muito nesta quarenta, sozinho ou com amigos. Os jogos que mais jogo
+                                    são:
+                                <ul>
+                                    <li>Jogos de emulador.</li>
+                                    <li>League of Legends.</li>
+                                    <li>Stardew Valley.</li>
+                                    <li>Minecraft.</li>
+                                </ul>
+                                </p>
+                            </article>
+                        </section>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="Flip">
+                        <section class="Front">
+                            <img src="./assets/images/Desenhando.jpg">
+                        </section>
+                        <section class="Back">
+                            <article class="backtext">
+                                <h4>Desenhos</h4>
+                                <p>Também estou desenhando, pretendo voltar a treinar.
+                                    Fiquei muito tempo sem desenhar e agora perdi bastante a qualidade,
+                                    mas quero voltar a ser como era antes.
+                                </p>
+                            </article>
+                        </section>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="Flip">
+                        <section class="Front">
+                            <img src="./assets/images/KurokoS2.jpg">
+                        </section>
+                        <section class="Back">
+                            <article class="backtext">
+                                <h4>Companhias</h4>
+                                <p>
+                                    Mesmo isolado em casa, não estou sozinho. Tenho a companhia de pessoas incríveis,
+                                    mesmo que virtualmente. Consigo jogar com alguns amigos e ao meu lado tenho a garota
+                                    que amo.
+                                </p>
+                            </article>
+                        </section>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="Flip">
+                        <section class="Front">
+                            <img src="./assets/images/Programando.webp">
+                        </section>
+                        <section class="Back">
+                            <article class="backtext">
+                                <h4>Estudos</h4>
+                                <p>
+                                    Também estou estudando, fiquei muito tempo parado, mas quero aprofundar nas
+                                    matérias do ensino médio e do curso integrado, pretendo me iniciar em novas
+                                    tecnologias.
+                                </p>
+                            </article>
+                        </section>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <address class="redes">
+            <a onclick="Discord()" class="mensagem"><i class="fab fa-discord"></i></a>
+            <a href="https://github.com/IuriViana"><i class="fab fa-github"></i></a>
+            <a href="https://www.youtube.com/channel/UC0OHP9d_VM2qvvjbXvFC6iw?view_as=subscriber"><i
+                    class="fab fa-youtube"></i></a>
+            <div class="msg">Mashairos#9296</div>
+        </address>
+        <div class="secundario">&copy; Iuri Pereira Viana</div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="https://kit.fontawesome.com/c1c918f1ae.js" crossorigin="anonymous"></script>
+</body>
+</html>
